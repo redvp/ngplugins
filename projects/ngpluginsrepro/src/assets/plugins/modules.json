@@ -1,0 +1,16 @@
+[
+  {
+    "path": "modulea",
+    "location": "assets/plugins/modulea.umd.js",
+    "moduleName": "ModuleaModule",
+    "description": "clarity form",
+    "registered": true
+  },
+  {
+    "path": "moduleb",
+    "location": "assets/plugins/moduleb.umd.js",
+    "moduleName": "ModulebModule",
+    "description": "built with ng 10 cli",
+    "registered": true
+  }
+]
