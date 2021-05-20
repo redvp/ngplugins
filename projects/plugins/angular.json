@@ -74,9 +74,7 @@
               "projects/moduleb/tsconfig.lib.json",
               "projects/moduleb/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }

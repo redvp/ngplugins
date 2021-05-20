@@ -1,11 +1,15 @@
 (function (global, factory) {
   typeof exports === "object" && typeof module !== "undefined"
-    ? factory(exports, require("@angular/core"))
+    ? factory(exports, require("@angular/core"), require("@angular/router"))
     : typeof define === "function" && define.amd
-    ? define("moduleb", ["exports", "@angular/core"], factory)
+    ? define(
+        "moduleb",
+        ["exports", "@angular/core", "@angular/router"],
+        factory
+      )
     : ((global = global || self),
-      factory((global.moduleb = {}), global.ng.core));
-})(this, function (exports, i0) {
+      factory((global.moduleb = {}), global.ng.core, global.ng.router));
+})(this, function (exports, i0, i1) {
   "use strict";
 
   var ModulebService = /** @class */ (function () {
@@ -93,12 +97,23 @@
     factory: function ModulebModule_Factory(t) {
       return new (t || ModulebModule)();
     },
-    imports: [[]],
+    imports: [
+      [
+        i1.RouterModule.forChild([
+          {
+            path: "",
+            pathMatch: "full",
+            component: ModulebComponent,
+          },
+        ]),
+      ],
+    ],
   });
   (function () {
     (typeof ngJitMode === "undefined" || ngJitMode) &&
       i0.ɵɵsetNgModuleScope(ModulebModule, {
         declarations: [ModulebComponent],
+        imports: [i1.RouterModule],
         exports: [ModulebComponent],
       });
   })();
@@ -111,7 +126,15 @@
           args: [
             {
               declarations: [ModulebComponent],
-              imports: [],
+              imports: [
+                i1.RouterModule.forChild([
+                  {
+                    path: "",
+                    pathMatch: "full",
+                    component: ModulebComponent,
+                  },
+                ]),
+              ],
               exports: [ModulebComponent],
             },
           ],

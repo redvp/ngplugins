@@ -7,40 +7,10 @@
         ["exports", "@angular/core", "@angular/router"],
         factory
       )
-    : ((global =
-        typeof globalThis !== "undefined" ? globalThis : global || self),
+    : ((global = global || self),
       factory((global.modulea = {}), global.ng.core, global.ng.router));
 })(this, function (exports, i0, i1) {
   "use strict";
-
-  function _interopNamespace(e) {
-    if (e && e.__esModule) return e;
-    var n = Object.create(null);
-    if (e) {
-      Object.keys(e).forEach(function (k) {
-        if (k !== "default") {
-          var d = Object.getOwnPropertyDescriptor(e, k);
-          Object.defineProperty(
-            n,
-            k,
-            d.get
-              ? d
-              : {
-                  enumerable: true,
-                  get: function () {
-                    return e[k];
-                  },
-                }
-          );
-        }
-      });
-    }
-    n["default"] = e;
-    return Object.freeze(n);
-  }
-
-  var i0__namespace = /*#__PURE__*/ _interopNamespace(i0);
-  var i1__namespace = /*#__PURE__*/ _interopNamespace(i1);
 
   var ModuleaService = /** @class */ (function () {
     function ModuleaService() {}
@@ -49,13 +19,13 @@
   ModuleaService.ɵfac = function ModuleaService_Factory(t) {
     return new (t || ModuleaService)();
   };
-  ModuleaService.ɵprov = i0__namespace.ɵɵdefineInjectable({
+  ModuleaService.ɵprov = i0.ɵɵdefineInjectable({
     token: ModuleaService,
     factory: ModuleaService.ɵfac,
     providedIn: "root",
   });
   /*@__PURE__*/ (function () {
-    i0__namespace.ɵsetClassMetadata(
+    i0.ɵsetClassMetadata(
       ModuleaService,
       [
         {
@@ -82,7 +52,7 @@
   ModuleaComponent.ɵfac = function ModuleaComponent_Factory(t) {
     return new (t || ModuleaComponent)();
   };
-  ModuleaComponent.ɵcmp = i0__namespace.ɵɵdefineComponent({
+  ModuleaComponent.ɵcmp = i0.ɵɵdefineComponent({
     type: ModuleaComponent,
     selectors: [["lib-modulea"]],
     decls: 14,
@@ -98,31 +68,28 @@
     ],
     template: function ModuleaComponent_Template(rf, ctx) {
       if (rf & 1) {
-        i0__namespace.ɵɵelementStart(0, "h1");
-        i0__namespace.ɵɵtext(1, " Application Int\u00E9grateur");
-        i0__namespace.ɵɵelementEnd();
-        i0__namespace.ɵɵelementStart(2, "section", 0);
-        i0__namespace.ɵɵelementStart(3, "h1");
-        i0__namespace.ɵɵtext(
-          4,
-          " Proc\u00E9dure Int\u00E9grateur demonstration"
-        );
-        i0__namespace.ɵɵelementEnd();
-        i0__namespace.ɵɵelementStart(5, "div", 1);
-        i0__namespace.ɵɵelement(6, "input", 2);
-        i0__namespace.ɵɵelementEnd();
-        i0__namespace.ɵɵelementStart(7, "div", 1);
-        i0__namespace.ɵɵelement(8, "input", 3);
-        i0__namespace.ɵɵelementEnd();
-        i0__namespace.ɵɵelementStart(9, "div", 1);
-        i0__namespace.ɵɵelement(10, "input", 4);
-        i0__namespace.ɵɵelementEnd();
-        i0__namespace.ɵɵelementStart(11, "div", 5);
-        i0__namespace.ɵɵelementStart(12, "button", 6);
-        i0__namespace.ɵɵtext(13, " Int\u00E9grateur Button ");
-        i0__namespace.ɵɵelementEnd();
-        i0__namespace.ɵɵelementEnd();
-        i0__namespace.ɵɵelementEnd();
+        i0.ɵɵelementStart(0, "h1");
+        i0.ɵɵtext(1, " Application Int\u00E9grateur");
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(2, "section", 0);
+        i0.ɵɵelementStart(3, "h1");
+        i0.ɵɵtext(4, " Proc\u00E9dure Int\u00E9grateur demonstration");
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(5, "div", 1);
+        i0.ɵɵelement(6, "input", 2);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(7, "div", 1);
+        i0.ɵɵelement(8, "input", 3);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(9, "div", 1);
+        i0.ɵɵelement(10, "input", 4);
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementStart(11, "div", 5);
+        i0.ɵɵelementStart(12, "button", 6);
+        i0.ɵɵtext(13, " Int\u00E9grateur Button ");
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementEnd();
+        i0.ɵɵelementEnd();
       }
     },
     styles: [
@@ -130,7 +97,7 @@
     ],
   });
   /*@__PURE__*/ (function () {
-    i0__namespace.ɵsetClassMetadata(
+    i0.ɵsetClassMetadata(
       ModuleaComponent,
       [
         {
@@ -155,8 +122,8 @@
     function ModuleaModule() {}
     return ModuleaModule;
   })();
-  ModuleaModule.ɵmod = i0__namespace.ɵɵdefineNgModule({ type: ModuleaModule });
-  ModuleaModule.ɵinj = i0__namespace.ɵɵdefineInjector({
+  ModuleaModule.ɵmod = i0.ɵɵdefineNgModule({ type: ModuleaModule });
+  ModuleaModule.ɵinj = i0.ɵɵdefineInjector({
     factory: function ModuleaModule_Factory(t) {
       return new (t || ModuleaModule)();
     },
@@ -175,14 +142,14 @@
   });
   (function () {
     (typeof ngJitMode === "undefined" || ngJitMode) &&
-      i0__namespace.ɵɵsetNgModuleScope(ModuleaModule, {
+      i0.ɵɵsetNgModuleScope(ModuleaModule, {
         declarations: [ModuleaComponent],
-        imports: [i1__namespace.RouterModule],
+        imports: [i1.RouterModule],
         exports: [ModuleaComponent],
       });
   })();
   /*@__PURE__*/ (function () {
-    i0__namespace.ɵsetClassMetadata(
+    i0.ɵsetClassMetadata(
       ModuleaModule,
       [
         {

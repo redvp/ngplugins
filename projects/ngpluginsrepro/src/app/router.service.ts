@@ -51,7 +51,6 @@ export class RouterService {
     if (config !== null && config !== undefined) {
       this.router.resetConfig(config);
       this.existingRoutes$.next(this.routes);
-      console.log(this.routes);
     }
   }
 }
