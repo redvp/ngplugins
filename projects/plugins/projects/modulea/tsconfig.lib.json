@@ -2,16 +2,29 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
-    "target": "es2015",
-    "declaration": false,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
     "inlineSources": true,
-    "types": [],
-    "lib": ["dom", "es2018"]
+    "lib": ["dom", "es2018"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es6",
+    "types": ["node"]
   },
   "angularCompilerOptions": {
+    "enableIvy": true,
+    "allowEmptyCodegenFiles": true,
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
-    "enableResourceInlining": true
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "enableResourceInlining": true,
+    "flatModuleId": true,
+    "flatModuleOutFile": true
   },
   "exclude": ["src/test.ts", "**/*.spec.ts"]
 }
