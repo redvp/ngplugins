@@ -17,7 +17,7 @@
     "types": ["node"]
   },
   "angularCompilerOptions": {
-    "enableIvy": true,
+    "enableIvy": false,
     "allowEmptyCodegenFiles": true,
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
