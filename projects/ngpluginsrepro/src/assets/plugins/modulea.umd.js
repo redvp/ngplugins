@@ -7,175 +7,114 @@
         ["exports", "@angular/core", "@angular/router"],
         factory
       )
-    : ((global = global || self),
+    : ((global =
+        typeof globalThis !== "undefined" ? globalThis : global || self),
       factory((global.modulea = {}), global.ng.core, global.ng.router));
-})(this, function (exports, i0, i1) {
+})(this, function (exports, i0, router) {
   "use strict";
+
+  function _interopNamespace(e) {
+    if (e && e.__esModule) return e;
+    var n = Object.create(null);
+    if (e) {
+      Object.keys(e).forEach(function (k) {
+        if (k !== "default") {
+          var d = Object.getOwnPropertyDescriptor(e, k);
+          Object.defineProperty(
+            n,
+            k,
+            d.get
+              ? d
+              : {
+                  enumerable: true,
+                  get: function () {
+                    return e[k];
+                  },
+                }
+          );
+        }
+      });
+    }
+    n["default"] = e;
+    return Object.freeze(n);
+  }
+
+  var i0__namespace = /*#__PURE__*/ _interopNamespace(i0);
 
   var ModuleaService = /** @class */ (function () {
     function ModuleaService() {}
     return ModuleaService;
   })();
-  ModuleaService.ɵfac = function ModuleaService_Factory(t) {
-    return new (t || ModuleaService)();
-  };
-  ModuleaService.ɵprov = i0.ɵɵdefineInjectable({
+  ModuleaService.ɵprov = i0__namespace.ɵɵdefineInjectable({
+    factory: function ModuleaService_Factory() {
+      return new ModuleaService();
+    },
     token: ModuleaService,
-    factory: ModuleaService.ɵfac,
     providedIn: "root",
   });
-  /*@__PURE__*/ (function () {
-    i0.ɵsetClassMetadata(
-      ModuleaService,
-      [
+  ModuleaService.decorators = [
+    {
+      type: i0.Injectable,
+      args: [
         {
-          type: i0.Injectable,
-          args: [
-            {
-              providedIn: "root",
-            },
-          ],
+          providedIn: "root",
         },
       ],
-      function () {
-        return [];
-      },
-      null
-    );
-  })();
+    },
+  ];
+  ModuleaService.ctorParameters = function () {
+    return [];
+  };
 
   var ModuleaComponent = /** @class */ (function () {
     function ModuleaComponent() {}
     ModuleaComponent.prototype.ngOnInit = function () {};
     return ModuleaComponent;
   })();
-  ModuleaComponent.ɵfac = function ModuleaComponent_Factory(t) {
-    return new (t || ModuleaComponent)();
-  };
-  ModuleaComponent.ɵcmp = i0.ɵɵdefineComponent({
-    type: ModuleaComponent,
-    selectors: [["lib-modulea"]],
-    decls: 14,
-    vars: 0,
-    consts: [
-      [1, "mat-typography"],
-      [1, "form"],
-      ["type", "text", "placeholder", "Text 1"],
-      ["type", "text", "placeholder", "Text 2"],
-      ["type", "text", "placeholder", "Text 3"],
-      [1, "button"],
-      ["mat-button", ""],
-    ],
-    template: function ModuleaComponent_Template(rf, ctx) {
-      if (rf & 1) {
-        i0.ɵɵelementStart(0, "h1");
-        i0.ɵɵtext(1, " Application Int\u00E9grateur");
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(2, "section", 0);
-        i0.ɵɵelementStart(3, "h1");
-        i0.ɵɵtext(4, " Proc\u00E9dure Int\u00E9grateur demonstration");
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(5, "div", 1);
-        i0.ɵɵelement(6, "input", 2);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(7, "div", 1);
-        i0.ɵɵelement(8, "input", 3);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(9, "div", 1);
-        i0.ɵɵelement(10, "input", 4);
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementStart(11, "div", 5);
-        i0.ɵɵelementStart(12, "button", 6);
-        i0.ɵɵtext(13, " Int\u00E9grateur Button ");
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementEnd();
-      }
-    },
-    styles: [
-      "div[_ngcontent-%COMP%], h1[_ngcontent-%COMP%]{border-radius:5px;margin:20px auto;padding:5px;width:60%}div[_ngcontent-%COMP%], div.button[_ngcontent-%COMP%], h1[_ngcontent-%COMP%]{text-align:center}",
-    ],
-  });
-  /*@__PURE__*/ (function () {
-    i0.ɵsetClassMetadata(
-      ModuleaComponent,
-      [
+  ModuleaComponent.decorators = [
+    {
+      type: i0.Component,
+      args: [
         {
-          type: i0.Component,
-          args: [
-            {
-              selector: "lib-modulea",
-              templateUrl: "./modulea.html",
-              styleUrls: ["./modulea.scss"],
-            },
+          selector: "lib-modulea",
+          template:
+            '<h1> Application Int\u00E9grateur</h1>\r\n<section class="mat-typography">\r\n\r\n  <h1> Proc\u00E9dure Int\u00E9grateur demonstration</h1>\r\n\r\n  <div class="form">\r\n    <input type="text"\r\n           placeholder="Text 1">\r\n  </div>\r\n  <div class="form">\r\n    <input type="text"\r\n           placeholder="Text 2">\r\n  </div>\r\n  <div class="form">\r\n    <input type="text"\r\n           placeholder="Text 3">\r\n  </div>\r\n  <div class="button">\r\n    <button mat-button> Int\u00E9grateur Button </button>\r\n  </div>\r\n\r\n</section>\r\n',
+          styles: [
+            "div,h1{margin:20px auto;width:60%;padding:5px;border-radius:5px}div,div.button,h1{text-align:center}",
           ],
         },
       ],
-      function () {
-        return [];
-      },
-      null
-    );
-  })();
+    },
+  ];
+  ModuleaComponent.ctorParameters = function () {
+    return [];
+  };
 
   var ModuleaModule = /** @class */ (function () {
     function ModuleaModule() {}
     return ModuleaModule;
   })();
-  ModuleaModule.ɵmod = i0.ɵɵdefineNgModule({ type: ModuleaModule });
-  ModuleaModule.ɵinj = i0.ɵɵdefineInjector({
-    factory: function ModuleaModule_Factory(t) {
-      return new (t || ModuleaModule)();
-    },
-    providers: [ModuleaService],
-    imports: [
-      [
-        i1.RouterModule.forChild([
-          {
-            path: "",
-            pathMatch: "full",
-            component: ModuleaComponent,
-          },
-        ]),
-      ],
-    ],
-  });
-  (function () {
-    (typeof ngJitMode === "undefined" || ngJitMode) &&
-      i0.ɵɵsetNgModuleScope(ModuleaModule, {
-        declarations: [ModuleaComponent],
-        imports: [i1.RouterModule],
-        exports: [ModuleaComponent],
-      });
-  })();
-  /*@__PURE__*/ (function () {
-    i0.ɵsetClassMetadata(
-      ModuleaModule,
-      [
+  ModuleaModule.decorators = [
+    {
+      type: i0.NgModule,
+      args: [
         {
-          type: i0.NgModule,
-          args: [
-            {
-              imports: [
-                i1.RouterModule.forChild([
-                  {
-                    path: "",
-                    pathMatch: "full",
-                    component: ModuleaComponent,
-                  },
-                ]),
-              ],
-              declarations: [ModuleaComponent],
-              exports: [ModuleaComponent],
-              providers: [ModuleaService],
-            },
+          imports: [
+            router.RouterModule.forChild([
+              {
+                path: "",
+                pathMatch: "full",
+                component: ModuleaComponent,
+              },
+            ]),
           ],
+          declarations: [ModuleaComponent],
+          exports: [ModuleaComponent],
+          providers: [ModuleaService],
         },
       ],
-      null,
-      null
-    );
-  })();
+    },
+  ];
 
   /*
    * Public API Surface of modulea
