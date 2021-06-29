@@ -1,7 +1,6 @@
 {
   "extends": "./tsconfig.lib.json",
   "compilerOptions": {
-    "declaration": false,
     "downlevelIteration": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
