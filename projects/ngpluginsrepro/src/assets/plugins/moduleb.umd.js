@@ -33,9 +33,9 @@
         return ModulebService;
     }());
     ModulebService.ɵfac = function ModulebService_Factory(t) { return new (t || ModulebService)(); };
-    ModulebService.ɵprov = /*@__PURE__*/ i0__namespace.ɵɵdefineInjectable({ token: ModulebService, factory: ModulebService.ɵfac, providedIn: 'root' });
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(ModulebService, [{
+    ModulebService.ɵprov = i0__namespace.ɵɵdefineInjectable({ token: ModulebService, factory: ModulebService.ɵfac, providedIn: 'root' });
+    /*@__PURE__*/ (function () {
+        i0__namespace.ɵsetClassMetadata(ModulebService, [{
                 type: i0.Injectable,
                 args: [{
                         providedIn: 'root',
@@ -50,15 +50,15 @@
         return ModulebComponent;
     }());
     ModulebComponent.ɵfac = function ModulebComponent_Factory(t) { return new (t || ModulebComponent)(); };
-    ModulebComponent.ɵcmp = /*@__PURE__*/ i0__namespace.ɵɵdefineComponent({ type: ModulebComponent, selectors: [["lib-moduleb"]], decls: 2, vars: 0, template: function ModulebComponent_Template(rf, ctx) {
+    ModulebComponent.ɵcmp = i0__namespace.ɵɵdefineComponent({ type: ModulebComponent, selectors: [["lib-moduleb"]], decls: 2, vars: 0, template: function ModulebComponent_Template(rf, ctx) {
             if (rf & 1) {
                 i0__namespace.ɵɵelementStart(0, "p");
                 i0__namespace.ɵɵtext(1, "moduleb works!");
                 i0__namespace.ɵɵelementEnd();
             }
         }, encapsulation: 2 });
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(ModulebComponent, [{
+    /*@__PURE__*/ (function () {
+        i0__namespace.ɵsetClassMetadata(ModulebComponent, [{
                 type: i0.Component,
                 args: [{
                         selector: 'lib-moduleb',
@@ -73,9 +73,8 @@
         }
         return ModulebModule;
     }());
-    ModulebModule.ɵfac = function ModulebModule_Factory(t) { return new (t || ModulebModule)(); };
-    ModulebModule.ɵmod = /*@__PURE__*/ i0__namespace.ɵɵdefineNgModule({ type: ModulebModule });
-    ModulebModule.ɵinj = /*@__PURE__*/ i0__namespace.ɵɵdefineInjector({ imports: [[
+    ModulebModule.ɵmod = i0__namespace.ɵɵdefineNgModule({ type: ModulebModule });
+    ModulebModule.ɵinj = i0__namespace.ɵɵdefineInjector({ factory: function ModulebModule_Factory(t) { return new (t || ModulebModule)(); }, imports: [[
                 i1.RouterModule.forChild([
                     {
                         path: '',
@@ -84,8 +83,9 @@
                     },
                 ]),
             ]] });
-    (function () {
-        (typeof ngDevMode === "undefined" || ngDevMode) && i0__namespace.ɵsetClassMetadata(ModulebModule, [{
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0__namespace.ɵɵsetNgModuleScope(ModulebModule, { declarations: [ModulebComponent], imports: [i1__namespace.RouterModule], exports: [ModulebComponent] }); })();
+    /*@__PURE__*/ (function () {
+        i0__namespace.ɵsetClassMetadata(ModulebModule, [{
                 type: i0.NgModule,
                 args: [{
                         declarations: [ModulebComponent],
@@ -102,7 +102,6 @@
                     }]
             }], null, null);
     })();
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0__namespace.ɵɵsetNgModuleScope(ModulebModule, { declarations: [ModulebComponent], imports: [i1__namespace.RouterModule], exports: [ModulebComponent] }); })();
 
     /*
      * Public API Surface of moduleb

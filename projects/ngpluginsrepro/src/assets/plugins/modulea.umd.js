@@ -24,7 +24,7 @@
         return Object.freeze(n);
     }
 
-    var i0__namespace = /*#__PURE__*/_interopNamespace(i0);
+    var i0__namespace = /*#__PURE__*/i0;
 
     var ModuleaService = /** @class */ (function () {
         function ModuleaService() {
@@ -49,7 +49,7 @@
         { type: i0.Component, args: [{
                     selector: 'lib-modulea',
                     template: "<h1> Application Int\u00E9grateur</h1>\r\n<section class=\"mat-typography\">\r\n\r\n  <h1> Proc\u00E9dure Int\u00E9grateur demonstration</h1>\r\n\r\n  <div class=\"form\">\r\n    <input type=\"text\"\r\n           placeholder=\"Text 1\">\r\n  </div>\r\n  <div class=\"form\">\r\n    <input type=\"text\"\r\n           placeholder=\"Text 2\">\r\n  </div>\r\n  <div class=\"form\">\r\n    <input type=\"text\"\r\n           placeholder=\"Text 3\">\r\n  </div>\r\n  <div class=\"button\">\r\n    <button mat-button> Int\u00E9grateur Button </button>\r\n  </div>\r\n\r\n</section>\r\n",
-                    styles: ["div,h1{margin:20px auto;width:60%;padding:5px;border-radius:5px}div,div.button,h1{text-align:center}"]
+                    styles: ["div,h1{border-radius:5px;margin:20px auto;padding:5px;width:60%}div,div.button,h1{text-align:center}"]
                 },] }
     ];
     ModuleaComponent.ctorParameters = function () { return []; };
